@@ -1,0 +1,24 @@
+{
+  "name": "wpsandbox",
+  "version": "1.0.0",
+  "description": "Sandbox for local experiments with web performance techniques",
+  "main": "app.mjs",
+  "engines": {
+    "node": ">=8.11"
+  },
+  "scripts": {
+    "start": "nodemon --experimental-modules --delay 1 --ext jsx,js,mjs --verbose --watch utils --watch views --watch app.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivan Kotov",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-react-views": "^0.10.5",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.4"
+  }
+}
